@@ -18,6 +18,7 @@ MACHINEBUILD = $(MACHINE)
 export MACHINEBUILD
 
 BBLAYERS ?= \
+	$(CURDIR)/meta-legacy \
 	$(CURDIR)/openembedded-core/meta \
 	$(CURDIR)/meta-openembedded/meta-oe \
 	$(CURDIR)/meta-openembedded/meta-multimedia \
@@ -27,7 +28,6 @@ BBLAYERS ?= \
 	$(CURDIR)/meta-oe-alliance/meta-oe \
 	$(CURDIR)/meta-oe-alliance/meta-brands/meta-dream \
 	$(CURDIR)/meta-local \
-	$(CURDIR)/meta-legacy \
 
 CONFFILES = \
 	$(TOPDIR)/env.source \
